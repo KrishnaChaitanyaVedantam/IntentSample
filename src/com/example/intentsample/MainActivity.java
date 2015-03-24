@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 	
@@ -31,6 +32,7 @@ public class MainActivity extends ActionBarActivity {
 				i.putExtra(Intent.EXTRA_SUBJECT,"Test Sub");
 				i.putExtra(Intent.EXTRA_TEXT, "This is test mail");
 				startActivity(i);//Intent.createChooser(i, "Choose an email client")));
+				Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_LONG).show();
 			}
 		});
 	}
