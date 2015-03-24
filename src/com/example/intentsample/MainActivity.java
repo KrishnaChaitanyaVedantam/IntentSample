@@ -33,6 +33,7 @@ public class MainActivity extends ActionBarActivity {
 				i.putExtra(Intent.EXTRA_TEXT, "This is test mail");
 				startActivity(i);//Intent.createChooser(i, "Choose an email client")));
 				Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_LONG).show();
+				//Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_LONG).show();
 			}
 		});
 	}
