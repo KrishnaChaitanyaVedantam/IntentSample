@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,9 +32,8 @@ public class MainActivity extends ActionBarActivity {
 				i.putExtra(Intent.EXTRA_EMAIL, new String[]{"krish9nas@gmail.com"});
 				i.putExtra(Intent.EXTRA_SUBJECT,"Test Sub");
 				i.putExtra(Intent.EXTRA_TEXT, "This is test mail");
-				startActivity(i);//Intent.createChooser(i, "Choose an email client")));
-				Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_LONG).show();
-				//Toast.makeText(MainActivity.this, "Test", Toast.LENGTH_LONG).show();
+				startActivity(i);
+				Log.d("This is one", "Testing");
 			}
 		});
 	}
